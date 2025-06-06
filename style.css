@@ -2,65 +2,25 @@
 
 /* Variáveis */
 :root {
-    --primary-color: #264f53e3;
-    --secondary-color: #a390d6;
-    --text-color: #f0f4f5;
-    --background-color: #8ab2c2;
-    --button-hover: #19a6dd;
+    --primary-color: #026773;
+    --secondary-color: #3CA6A6;
+    --text-color: #024959;
+    --background-color: #F2E3D5;
+    --button-hover: #012E40;
     --font-body: "Chocolate Classical Sans", serif;
     --font-titulo: "Rakkas", serif;
 }
 
-
-
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-body);
-}
-
-/* Corpo da página */
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-h3 {
-    margin-top: 25px;
-}
-
-p {
-    margin-top: 20px;
-}
-
-img {
-    max-width: 90%;
-}
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
-
+/* código omitido */
+/* Container que envolve a imagem e o título */
 .container {
-  text-align: center;
+  display: flex;
+  flex-direction: column; /* Organiza os elementos na vertical */
+  align-items: center;    /* Centraliza horizontalmente */
+  justify-content: center; /* Opcional, para centralizar verticalmente se necessário */
+  text-align: center;       /* Garante que o texto também fique centralizado */
 }
-
-h1 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
+<div class="container">
+  <img src="caminho-da-imagem.jpg" alt="Descrição da imagem" />
+  <h1>Seu Título Aqui</h1>
+</div>
