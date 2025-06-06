@@ -2,25 +2,53 @@
 
 /* Variáveis */
 :root {
-    --primary-color: #026773;
-    --secondary-color: #3ca6a6;
-    --text-color: #e7edee;
-    --background-color: #F2E3D5;
-    --button-hover: #012E40;
+    --primary-color: #264f53e3;
+    --secondary-color: #a390d6;
+    --text-color: #f0f4f5;
+    --background-color: #8ab2c2;
+    --button-hover: #19a6dd;
     --font-body: "Chocolate Classical Sans", serif;
     --font-titulo: "Rakkas", serif;
 }
 
-/* código omitido */
-/* Container que envolve a imagem e o título */
-.container {
-  display: flex;
-  flex-direction: column; /* Organiza os elementos na vertical */
-  align-items: center;    /* Centraliza horizontalmente */
-  justify-content: center; /* Opcional, para centralizar verticalmente se necessário */
-  text-align: center;       /* Garante que o texto também fique centralizado */
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
 }
-<div class="container">
-  <img src="caminho-da-imagem.jpg" alt="Descrição da imagem" />
-  <h1>Seu Título Aqui</h1>
+
+/* Corpo da página */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 90%;
+}
+
+div class="container">
+ <h1/>Lencois Maranhenses<h1/>
+  <img src="sua-imagem.jpg" alt="Descrição da imagem" />
 </div>
+.container {
+  text-align: center; /* Centraliza o conteúdo dentro do container */
+}
+
+img {
+  display: block; /* Remove o espaço em linha ao redor da imagem */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
